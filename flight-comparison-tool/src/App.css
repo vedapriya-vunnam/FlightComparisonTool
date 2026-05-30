@@ -1,0 +1,479 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.82),
+      rgba(0,0,0,0.82)
+    ),
+
+  url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 50px;
+
+  background:rgba(0,0,0,0.45);
+
+  backdrop-filter:blur(12px);
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  color:#1e90ff;
+  font-size:35px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#1e90ff;
+}
+
+/* ================= HOME PAGE ================= */
+
+.home{
+  padding:40px;
+  min-height:100vh;
+}
+
+/* HERO */
+
+.hero-section{
+  text-align:center;
+  margin-top:70px;
+}
+
+.hero-section h1{
+  font-size:75px;
+  color:#1e90ff;
+}
+
+.hero-section p{
+  margin-top:20px;
+  color:#ddd;
+  font-size:22px;
+  line-height:1.7;
+}
+
+/* SEARCH BOX */
+
+.search-box{
+  margin-top:45px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+
+  flex-wrap:wrap;
+
+  padding:30px;
+
+  background:rgba(255,255,255,0.08);
+
+  border-radius:25px;
+
+  backdrop-filter:blur(12px);
+
+  box-shadow:0px 5px 25px rgba(0,0,0,0.4);
+}
+
+.search-box input{
+  width:250px;
+
+  padding:18px;
+
+  border:none;
+  outline:none;
+
+  border-radius:14px;
+
+  font-size:17px;
+}
+
+.search-box button{
+  padding:18px 40px;
+
+  border:none;
+  border-radius:14px;
+
+  background:#1e90ff;
+
+  color:white;
+
+  font-size:18px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.search-box button:hover{
+  background:#0066cc;
+  transform:scale(1.05);
+}
+
+/* ================= STATS ================= */
+
+.stats-section{
+  margin-top:80px;
+
+  display:flex;
+  justify-content:center;
+  gap:60px;
+
+  flex-wrap:wrap;
+}
+
+.stat-card{
+  text-align:center;
+}
+
+.stat-card h2{
+  font-size:50px;
+  color:white;
+}
+
+.stat-card p{
+  margin-top:10px;
+  color:#bbb;
+  letter-spacing:1px;
+}
+
+/* ================= FEATURES ================= */
+
+.features-section{
+  margin-top:80px;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px,1fr));
+
+  gap:30px;
+}
+
+.feature-card{
+  background:rgba(255,255,255,0.08);
+
+  padding:32px;
+
+  border-radius:22px;
+
+  backdrop-filter:blur(12px);
+
+  transition:0.4s;
+
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.feature-card:hover{
+  transform:translateY(-10px);
+
+  background:rgba(255,255,255,0.14);
+
+  box-shadow:0px 5px 20px rgba(0,0,0,0.4);
+}
+
+.feature-card h3{
+  color:#1e90ff;
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+.feature-card p{
+  color:#ddd;
+  line-height:1.7;
+}
+
+/* ================= ABOUT PAGE ================= */
+
+.about-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.about-content{
+  text-align:center;
+  padding:80px 20px;
+}
+
+.about-content h1{
+  color:#1e90ff;
+  font-size:55px;
+}
+
+.about-content p{
+  max-width:850px;
+  margin:auto;
+  margin-top:35px;
+  color:#eee;
+  line-height:1.9;
+  font-size:20px;
+}
+
+/* ================= BLUE LINE ================= */
+
+.blue-line{
+  width:90px;
+  height:4px;
+  background:#1e90ff;
+  margin:18px auto 0;
+  border-radius:10px;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:70px 20px;
+}
+
+.contact-page h1{
+  color:#1e90ff;
+  text-align:center;
+  font-size:55px;
+}
+
+.contact-text{
+  text-align:center;
+  max-width:850px;
+  margin:30px auto;
+  color:#eee;
+  line-height:1.8;
+  font-size:20px;
+}
+
+.contact-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:60px;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.form-center{
+  justify-content:center;
+}
+
+/* ================= LOGIN & SIGNUP ================= */
+
+.auth-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.auth-box{
+  width:500px;
+
+  margin:70px auto;
+
+  text-align:center;
+
+  background:rgba(255,255,255,0.08);
+
+  padding:45px;
+
+  border-radius:25px;
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  box-shadow:0px 5px 25px rgba(0,0,0,0.4);
+}
+
+.auth-box h1{
+  color:#1e90ff;
+  font-size:52px;
+}
+
+/* ================= FORMS ================= */
+
+.form{
+  margin-top:30px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:25px;
+}
+
+.form input,
+.form textarea{
+  width:100%;
+
+  padding:22px;
+
+  border:none;
+  outline:none;
+
+  border-radius:16px;
+
+  font-size:18px;
+
+  background:rgba(255,255,255,0.92);
+
+  color:#333;
+}
+
+.form textarea{
+  resize:none;
+  min-height:220px;
+}
+
+.form button{
+  padding:20px;
+
+  border:none;
+  border-radius:16px;
+
+  background:#1e90ff;
+
+  color:white;
+
+  font-size:22px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.form button:hover{
+  background:#0066cc;
+  transform:scale(1.03);
+}
+
+/* ================= LOGIN TEXT ================= */
+
+.bottom-text{
+  margin-top:25px;
+  color:#ddd;
+  font-size:18px;
+}
+
+.bottom-text span{
+  color:#1e90ff;
+  cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.bottom-bar{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  gap:50px;
+
+  flex-wrap:wrap;
+
+  padding:22px;
+
+  background:rgba(0,0,0,0.45);
+
+  backdrop-filter:blur(10px);
+
+  color:#ddd;
+
+  font-size:17px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero-section h1{
+    font-size:52px;
+  }
+
+  .search-box{
+    flex-direction:column;
+  }
+
+  .search-box input{
+    width:100%;
+  }
+
+  .auth-box{
+    width:95%;
+  }
+
+  .about-content h1,
+  .contact-page h1{
+    font-size:42px;
+  }
+
+  .about-content p,
+  .contact-text{
+    font-size:17px;
+  }
+
+  .bottom-bar{
+    gap:20px;
+    text-align:center;
+  }
+
+  .form input,
+  .form textarea{
+    padding:18px;
+  }
+
+  .form button{
+    font-size:18px;
+  }
+}
