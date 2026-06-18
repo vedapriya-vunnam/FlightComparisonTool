@@ -476,4 +476,266 @@ body{
   .form button{
     font-size:18px;
   }
+
+}
+.feature-card{
+  text-decoration:none;
+  color:white;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:15px;
+  padding:25px;
+  transition:0.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-5px);
+  border-color:#1e90ff;
+  box-shadow:0 0 15px rgba(30,144,255,0.4);
+}
+
+.feature-card h3{
+  color:#1e90ff;
+  margin-bottom:10px;
+}
+
+.feature-card p{
+  color:white;
+}
+/* ================= MODULE PAGES ================= */
+
+.module-page{
+  min-height:100vh;
+  padding:80px 40px;
+  text-align:center;
+}
+
+.module-page h1{
+  color:#1e90ff;
+  font-size:55px;
+  margin-bottom:50px;
+}
+
+.module-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.module-card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:20px;
+  padding:30px;
+  backdrop-filter:blur(12px);
+  transition:0.4s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.module-card:hover{
+  transform:translateY(-8px);
+  border-color:#1e90ff;
+  box-shadow:0 0 20px rgba(30,144,255,0.4);
+}
+
+.module-card h2{
+  color:#1e90ff;
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.module-card h3{
+  color:white;
+  margin:15px 0;
+  font-size:30px;
+}
+
+.module-card p{
+  color:#ddd;
+  line-height:1.7;
+  margin:8px 0;
+}
+
+.module-btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  background:#1e90ff;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.module-btn:hover{
+  background:#0066cc;
+  transform:scale(1.05);
+}
+
+/* ================= AIRLINE LOGO ================= */
+
+.airline-logo{
+  width:70px;
+  height:70px;
+  margin-bottom:15px;
+}
+
+/* ================= FILTER PANEL ================= */
+
+.filter-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.filter-card{
+  width:500px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:20px;
+  backdrop-filter:blur(12px);
+  padding:35px;
+  text-align:left;
+}
+
+.filter-card label{
+  display:block;
+  margin-top:15px;
+  margin-bottom:8px;
+  color:#1e90ff;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.filter-card select{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  margin-bottom:10px;
+  font-size:16px;
+  background:rgba(255,255,255,0.92);
+  color:#333;
+}
+
+.filter-card button{
+  width:100%;
+  margin-top:20px;
+}
+
+/* ================= DATE PRICE CARDS ================= */
+
+.price-card{
+  text-align:center;
+}
+
+.price-card h2{
+  color:#1e90ff;
+  font-size:26px;
+}
+
+.price-card h3{
+  font-size:34px;
+  margin-top:10px;
+}
+
+/* ================= OTP STATS ================= */
+
+.otp-value{
+  font-size:45px;
+  color:#00ff88;
+  font-weight:bold;
+}
+
+/* ================= LAYOVER INFO ================= */
+
+.layover-time{
+  color:#ffb347;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* ================= BAGGAGE POLICY ================= */
+
+.baggage-info{
+  margin-top:15px;
+}
+
+.baggage-info p{
+  margin:10px 0;
+  font-size:17px;
+}
+
+.baggage-info strong{
+  color:#1e90ff;
+}
+
+/* ================= MODULE RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+  .module-page{
+    padding:60px 20px;
+  }
+
+  .module-page h1{
+    font-size:40px;
+  }
+
+  .filter-card{
+    width:100%;
+  }
+
+  .module-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+.layover-time{
+  color:#ffb347;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.module-card strong{
+  color:#1e90ff;
+}
+/* ================= FLIGHT RESULTS ================= */
+
+.flight-results{
+  margin-top:70px;
+  text-align:center;
+}
+
+.flight-results h2{
+  color:#1e90ff;
+  font-size:45px;
+  margin-bottom:35px;
+}
+
+.flight-results .module-card h3{
+  color:#00ff88;
+  font-size:32px;
+}
+
+.flight-results .module-card{
+  min-height:250px;
+}
+.flight-results{
+  margin-top:60px;
+  text-align:center;
+}
+
+.flight-results h2{
+  color:#1e90ff;
+  font-size:42px;
+  margin-bottom:30px;
+}
+
+.flight-results .module-card h3{
+  color:#00ff88;
 }
